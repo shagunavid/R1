@@ -19,6 +19,7 @@ resource "aws_eip" "ip" {
   instance = "${aws_instance.example.id}"
 }
 
+
 resource "aws_s3_bucket" "example" {
 
   bucket = "terraform-getting-started-guide"
