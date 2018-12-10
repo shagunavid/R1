@@ -203,7 +203,7 @@ resource "aws_cloudtrail"  "example" {
 
   is_multi_region_trail = true
 
-  #cloud_watch_logs_group_arn    = "aws:arn::log-group:someLogGroup:"
+  cloud_watch_logs_group_arn    = "aws:arn::log-group:someLogGroup:"
   event_selector {
     read_write_type = "All"
     include_management_events = true
